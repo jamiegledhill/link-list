@@ -1,6 +1,13 @@
 body {
   margin: 0;
 }
+video{
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 h1 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -29,10 +36,13 @@ p {
   font-size: 14px;
   padding-left: 0;
   column-count: 2;
+  /* text-align: center; */
 }
 a {
   text-decoration: none;
   color: black;
+  margin: auto;
+  text-align: center;
 }
 
 a:visited {
@@ -47,12 +57,18 @@ a:hover {
 a:active {
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 a p {
   transition: .3s;
+  
+  
 }
 a p {
   background-color: rgba(102, 102, 102, 0);
+  /* margin: auto;
+  text-align: center; */
+  column-count: 1;
 }
 a p:hover {
   background-color: #666;
@@ -60,17 +76,16 @@ a p:hover {
 a p:active {
   background-color: rgb(66, 17, 17);
 }
+.centred-text{
+  text-align: center;
+}
 #container {
   width: 800px;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
-  background-image: url("../images/photo-bkg.jpg");
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position:top;
+  background: rgba(226, 226, 226, 0.8);
+  z-index: 2;
 }
 #masthead {
   height: 100px;
@@ -85,7 +100,9 @@ a p:active {
 }
 #links-block {
   width: 50%;
-  display: inline-block;
+  /* display: inline-block; */
+  margin-left: auto;
+  margin-right: auto;
 }
 #trans-flower {
   position: absolute;
